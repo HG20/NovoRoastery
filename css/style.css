@@ -1,0 +1,559 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+:root {
+  --mainBrown:#662200;;
+  --mainYellow: rgb(150, 120, 3);
+  --mainRed: rgb(189, 6, 6);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+}
+
+#myNav{
+  display: inline-block;
+  margin-left: 50px
+}
+ul {
+  letter-spacing: 0.1rem;
+}
+/* nav links */
+.navbar-toggler {
+  outline: none !important;
+}
+.toggler-icon {
+  font-size: 2.5rem;
+  color: var(--mainBrown);
+}
+.nav-link {
+  color: var(--mainBrown);
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.nav-link:hover {
+  color: var(--mainRed);
+}
+
+#registration a{
+   color: inherit; 
+}
+
+#registration a:hover{
+     color: rgb(189, 6, 6);
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+/* end of nav links */
+/* info icons */
+.cart-info__icon {
+  color: var(--mainBlack);
+  cursor: pointer;
+}
+
+.cart-info {
+  border: 0.1rem solid var(--mainBlack);
+  color: var(--mainBlack);
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+.cart-info:hover {
+  background: var(--mainBrown);
+  border-color: var(--mainBrown);
+  color: var(--mainWhite);
+}
+.cart-info:hover .cart-info__icon {
+  color: var(--mainWhite);
+}
+/* end of info icons */
+/* banner */
+
+.max-height {
+  min-height: calc(100vh - 76px);
+  background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
+    url("../img/homeslide01.jpg") center/cover fixed no-repeat;
+  position: relative;
+}
+
+.max-height1{
+  min-height: calc(100vh - 76px);
+  background:url("../img/homeslide03.jpg") center/cover fixed no-repeat;
+  position: relative;
+}
+.max-height2{
+  min-height: calc(100vh - 76px);
+  background:url("../img/homeslide02.jpg") center/cover fixed no-repeat;
+  position: relative;
+}
+.max-height3{
+  min-height: calc(100vh - 76px);
+  background:url("../img/homeslide03.jpg") center/cover fixed no-repeat;
+  position: relative;
+}
+.banner {
+  color: var(--mainWhite);
+  margin-top: -4rem;
+}
+.banner-title {
+  color: var(--mainBrown);
+  font-size: 4rem;
+}
+.banner-link {
+  font-size: 1.5rem;
+  color: var(--mainBlack);
+  border: 0.2rem solid var(--mainBlack);
+}
+.banner-link:hover {
+  background: var(--mainWhite);
+  color: var(--mainBrown);
+}
+/* endo of banner */
+/* cart  */
+.cart {
+  position: absolute;
+  min-height: 10rem;
+  background: var(--mainWhite);
+  top: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.5);
+  width: 0;
+  overflow: hidden;
+}
+.show-cart {
+  width: 18rem;
+  padding: 2rem 1.5rem;
+  transform: rotateY(-360deg);
+}
+.cart-item {
+  transition: all 2s ease-in-out;
+}
+
+/* end of cart */
+/* cart item */
+.cart-item-remove {
+  color: var(--mainBrown);
+  transition: all 1s ease-in-out;
+}
+.cart-item-remove:hover {
+  transform: scale(1.1);
+  color: var(--mainBlack);
+}
+#cart-item-price {
+  font-size: 0.8rem;
+}
+/* cart item */
+/* cart buttons */
+.btn-brown {
+  color: var(--mainBrown) !important;
+  border-color: var(--mainBrown) !important;
+}
+.btn-black {
+  color: var(--mainBlack) !important;
+  border-color: var(--mainBlack) !important;
+}
+.btn-black:hover {
+  color: var(--mainBrown) !important;
+  background: var(--mainBlack) !important;
+}
+.btn-brown:hover {
+  background: var(--mainWhite) !important;
+  color: var(--mainBrown) !important;
+}
+.btn-red{
+  color: var(--mainBlack) !important;
+}
+
+.btn-red:hover{
+  background: var(--mainRed) !important;
+  color: var(--mainBlack) !important
+}
+/* end of cart buttons */
+
+/* about */
+.about-img__container {
+  position: relative;
+}
+
+.about-img__container::before {
+  content: "";
+  position: absolute;
+  top: -0.1rem;
+  left: -1.2rem;
+  width: 100%;
+  height: 100%;
+  outline: 0.5rem solid var(--mainBrown);
+  z-index: -1;
+  transition: all 1s ease-in-out;
+}
+.about-img__container:hover:before {
+  top: 0;
+  left: 0;
+}
+
+/*end of  about */
+
+/* store items */
+.store {
+  background: var(--mainGrey);
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.store-img {
+  transition: all 1s ease-in-out;
+}
+.img-container:hover .store-img {
+  transform: scale(1.2);
+}
+.store-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: var(--mainBrown);
+  border-top-left-radius: 1rem;
+  transition: all 0.6s ease-in-out;
+  transform: translate(100%, 100%);
+}
+.img-container:hover .store-item-icon {
+  transform: translate(0, 0);
+}
+.store-item-icon:hover {
+  color: var(--mainWhite);
+}
+.store-item-value {
+  color: --mainYellow;
+}
+/*end of  store items */
+.search-box {
+  background: var(--mainBrown);
+  color: var(--mainBlack);
+}
+
+
+
+/* Product page styling  */
+
+
+.select-style {
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  width: 120px;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: #fff;
+
+  background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;
+}
+
+.select-style select {
+  padding: 5px 8px;
+  width: 130%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.select-style select:focus {
+  outline: none;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+.product-quantity {
+  width: 10rem;
+  display: block;
+}
+.quantity-selectors-container {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+
+.quantity-selectors {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.quantity-selectors button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  border-radius: 0;
+  border: 1px solid grey;
+  background-color: #fff;
+  color: grey;
+}
+
+.quantity-selectors button:first-child {
+  border-bottom: 0;
+}
+
+.quantity-selectors button:hover {
+  cursor: pointer;
+}
+
+.quantity-selectors button[disabled="disabled"] {
+  cursor: not-allowed;
+}
+
+.quantity-selectors button[disabled="disabled"] span {
+  opacity: 0.5;
+}
+
+
+
+footer{
+	background-color: var(--mainBrown);
+  opacity: 0.8;
+  font-family: Roboto;
+	text-transform: uppercase;
+	padding: 1rem 0 2rem;
+	font-weight: 700;
+	font-size: .9rem;
+  letter-spacing: .1rem;
+  overflow: auto;
+  text-align: center;
+}
+
+footer img{
+	height: 3rem;
+	margin: 1.5rem 3rem;
+}
+
+footer a{
+	color: #fff;
+}
+footer h4{
+	color: #fff;
+}
+footer p{
+	color: #fff;
+}
+
+footer svg.svg-inline--fa{
+	font-size: 1.6rem;
+	margin: 1.2rem .5rem 0 0;
+}
+
+footer-svg.svg-inline--fa:hover{
+	color:#452D1A;
+}
+
+
+
+/*video styling */
+
+.video {
+  background: var(--mainGrey);
+}
+.responsive-video {
+    
+  top: 0; right: 0; 
+  bottom: 0; left: 0;
+  margin: auto; 
+  width: 100%;
+  height: 0;
+  padding-bottom: 55%;
+  position: relative;
+}
+.responsive-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*checkout form style*/
+
+.checkout-row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.checkout-container {
+  background-color: #f2f2f2;
+  padding: 15px 20px 15px 20px;
+  margin: auto;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  width: 50%
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.checkout-btn {
+  background-color: var(--mainBrown);
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.checkout-btn:hover {
+  background-color: var(--mainRed);
+}
+
+/* Registration page styling
+*/
+login-page{
+	width: 360px;
+	padding: 10% 0 0;
+	margin:auto;
+}
+
+.form {
+	position:relative;
+	z-index:1;
+	background: rgba(127,59,12,0.5);
+	max-width: 360px;
+	margin: 0 auto 100px;
+	padding:45px;
+	text-align: center;
+}
+
+.form input{
+	font-family: 'Roboto', sans-serif;
+	outline: 1;
+	background:#f2f2f2;
+	width:100%;
+	border:0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 16px
+}
+
+.form button {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: #43A047;
+	width:100%;
+	border:0;
+	padding:15px;
+	color:#fff;
+	font-size: 14px;
+	cursor:pointer;
+}
+
+.form button:hover,.form button:active {
+	background:rgb(88, 184, 88);
+}
+
+.form .message{
+	margin: 15px 0 0;
+	color:aliceblue;
+	font-size: 17px;
+}
+
+.form .message a{
+	color: 		rgb(95, 218, 95);
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.form .register-form {
+	display:none;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+
+@media screen and (min-width: 400px) {
+
+}

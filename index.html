@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name ="description" content = "Novo Roastery Website ">
+  <meta name = "keywords" content = "Novo Roastey, Novoroaster, Coffee, Freshly Roasted Coffee, Cafea, Cafea proaspat prajita, E-commerce">
+  <meta name = "author" content ="Horea Ginsca">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <title>Novo Roastery</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <!-- navbar  -->
+
+    <nav class="navbar navbar-expand-lg px-4">
+      <a class="navbar-brand" href="#"><img src="img/novocaffee.png" height = "120px" width= "120px" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+        <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNav">
+        <ul class="navbar-nav mx-auto text-capitalize">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blenduri.html">blenduri de cafea</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="prajitorianoastra.html">prajitoria noastra</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">contact</a>
+          </li>
+        </ul>
+        <div class="nav-info-items d-none d-lg-flex ">
+          <!-- single info -->
+          <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+            <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+            <p class="mb-0"> 0724 350 341</p>
+          </div>
+          <div id="registration" class="nav-info align-items-center d-flex justify-content-around">
+            <a href="registration.html"><span class="registration mr-lg-3"><i class="fas fa-sign-in-alt"></i>
+              Autentificare</span></a>
+          </div>
+          <!-- end of single info -->
+          <!-- single info -->
+          <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+            <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+          </div>
+          <!-- end of single info -->
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <!-- banner  -->
+    <div class="container-fluid">
+      <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner text-center">
+          <h1 class="text-capitalize">There will be <strong class="banner-title ">coffee</strong></h1>
+          <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+        </div>
+        <div id="cart" class="cart">
+          
+          <!-- cart item -->
+          <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+            <a href="#" id='cart-item-remove' class="cart-item-remove">
+            </a>
+          </div>
+          <!--end of  cart item -->
+          <!-- cart total -->
+         
+          <!--end cart total -->
+          <!-- cart buttons -->
+          <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+            <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-brown text-uppercase">clear cart</a>
+            <a href="checkout.html" class="btn btn-outline-secondary text-uppercase btn-white">checkout</a>
+          </div>
+          <!--end of  cart buttons -->
+          <!--  -->
+        </div>
+      </div>
+
+      
+    </div>
+
+    <!--end of  banner  -->
+  </header>
+  <!-- header -->
+  <!-- about us -->
+  <section class="about py-5" id="about">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6 my-5">
+          <h1 class="text-capitalize">despre <strong class="banner-title ">noi</strong></h1>
+          <p class="my-4 text-muted w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas
+            beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis
+            porro at dolorum! Ad!Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas
+            beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis
+            porro at dolorum! Ad!</p>
+          <a href="#" class="btn btn-outline-secondary btn-red text-uppercase ">explore</a>
+
+        </div>
+        <div class="col-10 mx-auto col-md-6 align-self-center my-5">
+          <div class="about-img__container">
+            <img src="img/maschine-innen.png" width = "700" height = "500" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end of about us -->
+
+
+  <!-- store -->
+  <section id="store" class="store py-5">
+    <div class="container">
+      <!-- section title -->
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <h1 class="text-capitalize"><strong class="banner-title ">blendurile </strong>noastre</h1><br>
+        </div>
+      </div>
+      <!-- end of section title -->
+      <!--filter buttons -->
+      <div class="row">
+        <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+          <a href="#" class="btn btn-outline-secondary btn-brown text-uppercase filter-btn m-2" data-filter="Brazilia"> Brazilia</a>
+          <a href="#" class="btn btn-outline-secondary btn-brown text-uppercase filter-btn m-2" data-filter="Nicaragua">Nicaragua</a>
+          <a href="#" class="btn btn-outline-secondary btn-brown text-uppercase filter-btn m-2" data-filter="Bolivia">Bolivia</a>
+          <a href="#" class="btn btn-outline-secondary btn-brown text-uppercase filter-btn m-2" data-filter="Columbia">Columbia</a>
+          <a href="#" class="btn btn-outline-secondary btn-brown text-uppercase filter-btn m-2" data-filter="Ethiopia">Ethiopia</a>
+          <a href="#" class="btn btn-outline-secondary btn-brown text-uppercase filter-btn m-2" data-filter="Jamaica">Jamaica</a>
+          <a href="#" class="btn btn-outline-secondary btn-brown text-uppercase filter-btn m-3" data-filter="Kenya">Kenya</a>
+          <a href="#" class="btn btn-outline-secondary btn-brown text-uppercase filter-btn m-3" data-filter="Salvador">El Salvador</a>
+          <a href="#" class="btn btn-outline-secondary btn-brown text-uppercase filter-btn m-3" data-filter="Rwanda">Rwanda</a>
+          <a href="#" class="btn btn-outline-secondary btn-brown text-uppercase filter-btn m-3" data-filter="Panama">Panama</a>
+        </div>
+      </div>
+      <!-- search box -->
+      <br>
+      <!--end of filter buttons -->
+      <!-- store  items-->
+      <div class="row" class="store-items" id="store-items">
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Brazilia" data-item="Brazilia">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/1.jpg" class="card-img-top store-img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Brazilia </h5>
+                <h5 class="store-item-value">RON <strong id="store-item-price" class="font-weight-bold">110</strong></h5>
+              </div>
+              <p class="store-description">Continut: 100% Arabica</p>
+              <a href="products/brazilia.html" class= "btn btn-outline-secondary btn-brown text-uppercase">Detalii</a>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Nicaragua" data-item="Nicaragua">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/2.jpg" class="card-img-top store-img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Nicaragua </h5>
+                <h5 class="store-item-value">RON <strong id="store-item-price" class="font-weight-bold">100</strong></h5>
+              </div>
+              <p class="store-description">Continut: 80% Arabica, 20% Robusta</p>
+              <a href="products/nicaragua.html" class= "btn btn-outline-secondary btn-brown text-uppercase">Detalii</a>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Bolivia" data-item="Bolivia">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/3.jpg" class="card-img-top store-img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Bolivia </h5>
+                <h5 class="store-item-value">RON <strong id="store-item-price" class="font-weight-bold">95</strong></h5>
+              </div>
+              <p class="store-description">Continut: 70% Arabica, 30% Robusta</p>
+              <a href="products/bolivia.html" class= "btn btn-outline-secondary btn-brown text-uppercase">Detalii</a>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Columbia" data-item="Columbia">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/4.jpg" class="card-img-top store-img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Columbia </h5>
+                <h5 class="store-item-value">RON <strong id="store-item-price" class="font-weight-bold">90</strong></h5>
+              </div>
+              <p class="store-description">Continut: 60% Arabica, 40% Robusta</p>
+              <a href="products/columbia.html" class= "btn btn-outline-secondary btn-brown text-uppercase">Detalii</a>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Ethiopia" data-item="Ethiopia">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/5.jpg" class="card-img-top store-img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Ethiopia </h5>
+                <h5 class="store-item-value">RON <strong id="store-item-price" class="font-weight-bold">100</strong></h5>
+              </div>
+              <p class="store-description">Continut: 50% Arabica, 50% Robusta</p>
+              <a href="products/ethiopia.html" class= "btn btn-outline-secondary btn-brown text-uppercase">Detalii</a>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Jamaica" data-item="Jamaica">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/6.jpg" class="card-img-top store-img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Jamaica </h5>
+                <h5 class="store-item-value">RON <strong id="store-item-price" class="font-weight-bold">120</strong></h5>
+              </div>
+              <p class="store-description">Continut: 40% Arabica, 60% Robusta</p>
+              <a href="products/jamaica.html" class= "btn btn-outline-secondary btn-brown text-uppercase">Detalii</a>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Kenya" data-item="Kenya">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/7.jpg" class="card-img-top store-img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Kenya </h5>
+                <h5 class="store-item-value">RON <strong id="store-item-price" class="font-weight-bold">130</strong></h5>
+              </div>
+              <p class="store-description">Continut: 30% Arabica, 70% Robusta</p>
+              <a href="products/kenya.html" class= "btn btn-outline-secondary btn-brown text-uppercase">Detalii</a>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item El Salvador" data-item="El Salvador">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/8.jpg" class="card-img-top store-img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">El Salvador </h5>
+                <h5 class="store-item-value">RON <strong id="store-item-price" class="font-weight-bold">110</strong></h5>
+              </div>
+              <p class="store-description">Continut: 20% Arabica, 80% Robusta</p>
+              <a href="products/elsalvador.html" class= "btn btn-outline-secondary btn-brown text-uppercase">Detalii</a>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Rwanda" data-item="Rwanda">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/9.jpg" class="card-img-top store-img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Rwanda </h5>
+                <h5 class="store-item-value">RON <strong id="store-item-price" class="font-weight-bold">100</strong></h5>
+              </div>
+              <p class="store-description">Continut: 10% Arabica, 90% Robusta</p>
+              <a href="products/rwanda.html" class= "btn btn-outline-secondary btn-brown text-uppercase">Detalii</a>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Panama" data-item="Panama">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/19.jpg" class="card-img-top store-img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Panama </h5>
+                <h5 class="store-item-value">RON <strong id="store-item-price" class="font-weight-bold">95</strong></h5>
+              </div>
+              <p class="store-description">Continut: 100% Robusta</p>
+              <a href="products/panama.html" class= "btn btn-outline-secondary btn-brown text-uppercase">Detalii</a>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+
+      </div>
+  </section>
+  <!--end of store items -->
+
+<!--Footer-->
+  <footer>
+    <div class="row justify-content-center">
+  
+      <div class="col-md-2">
+        <img src ="img/novocaffee.png" style= "height: 70px" "width: 70px" >
+          <h4>Contact</h4>
+          <br>
+          <p>Telefon: 0724 350 341</p>
+          <br>
+          <p>contact@novoroastery.ro</p>
+        <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+  
+    </div>
+  </footer>
+<!--end of Footer-->
+
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- script js -->
+  <script src="js/app.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+</body>
+
+</html>
